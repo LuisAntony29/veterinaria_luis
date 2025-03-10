@@ -1,0 +1,61 @@
+/* Archivo: style.css */
+:root {
+    --color-primario: #2C3E50;
+    --color-secundario: #18BC9C;
+    --color-acento: #F39C12;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: var(--color-primario) !important;
+}
+
+header {
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#contacto input, #contacto textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contacto button {
+    background-color: var(--color-secundario);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#contacto button:hover {
+    background-color: var(--color-acento);
+}
+
+footer a {
+    color: white;
+    margin: 0 10px;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: var(--color-acento);
+}
